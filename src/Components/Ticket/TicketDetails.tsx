@@ -41,8 +41,8 @@ const TicketDetails = () => {
     const [ticket, setTicket] = useState<Ticket | null>(null);
     const [comments, setComments] = useState<any[]>([]);
     const [newComment, setNewComment] = useState("");
-const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' as 'success' | 'error' });
-const handleCloseSnackbar = () => setSnackbar({ ...snackbar, open: false });
+    const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' as 'success' | 'error' });
+    const handleCloseSnackbar = () => setSnackbar({ ...snackbar, open: false });
     const fetchTicketData = async () => {
         if (!id || !token) return;
         try {

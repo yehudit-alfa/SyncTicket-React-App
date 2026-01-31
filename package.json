@@ -20,6 +20,8 @@
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.69.0",
     "react-router-dom": "^7.11.0",
+    "stylis": "^4.3.6",
+    "stylis-plugin-rtl": "^2.1.1",
     "sweetalert2": "^11.26.17"
   },
   "devDependencies": {

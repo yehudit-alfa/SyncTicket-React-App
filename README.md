@@ -69,19 +69,25 @@ cd helpdesk-project
 ```bash
 npm install
 ```
-3. Create a `.env` file at the project root. Vite requires `VITE_` prefixes for client env vars. Example:
-```env
-VITE_API_URL=https://api.example.com
-VITE_API_TIMEOUT=10000
+3. Backend Setup (Required):
+   This frontend requires the backend server to be running. 
+   - Clone the backend from: [https://github.com/yehudit-alfa/react-helpdesk-backend](https://github.com/yehudit-alfa/react-helpdesk-backend)
+   - Follow the instructions in the backend README to start the server on port 4000.
+
+4. Environment Variables:
+   Create a `.env` file at the project root and point it to the local backend:
+   ```env
+   VITE_API_URL=http://localhost:4000
+   VITE_API_TIMEOUT=10000
 ```
-4. Run the development server:
-```bash
-npm run dev
+5. Run the development server:
+   ```bash
+   npm run dev
 ```
-5. Build for production:
-```bash
-npm run build
-```
+6.Build for production
+   npm run build
+   
+
 
 The application will be available locally at: [http://localhost:5173/](http://localhost:5173/)
 

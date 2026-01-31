@@ -25,14 +25,11 @@ const CreateTicket: React.FC = () => {
     const [selectedPriority, setSelectedPriority] = useState<number | string>('');
 
     useEffect(() => {
-        
         const fetchPriorities = async () => {
-                            if (!token) return
-
+            if (!token) return
             try {
                 const data = await ticketService.getPriorities(token);
                 setPriorities(data);
-               
                 if (data.length > 0) setSelectedPriority(data[0].id);
                  
             } catch (err) { console.error(err); }

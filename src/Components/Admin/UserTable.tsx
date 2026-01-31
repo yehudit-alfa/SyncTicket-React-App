@@ -15,7 +15,7 @@ const roleColors = {
     agent: '#fbbf24',
     customer: '#22d3ee'
 };
-
+//פה אני מציגה טבלה של משתמשים עם עיצוב מיוחד לכל תפקיד
 const UserTable: React.FC<UserTableProps> = ({ users }) => {
     return (
         <TableContainer component={Paper} sx={{ bgcolor: '#1e293b', borderRadius: 3, border: '1px solid rgba(255,255,255,0.05)' }}>

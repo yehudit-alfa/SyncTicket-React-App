@@ -32,7 +32,7 @@ const ManageUsers: FunctionComponent = () => {
     useEffect(() => {
         if (user?.role !== 'admin') navigate('/');
     }, [user, navigate]);
-
+//מבקש מהשרת את רשימת המשתמשים
     const fetchUsers = async () => {
         if (!token) return;
         try {
